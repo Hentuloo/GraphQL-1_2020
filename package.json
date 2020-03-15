@@ -1,0 +1,21 @@
+{
+  "name": "nodeqraphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:server": "nodemon dist/app.js",
+    "start:build": "parcel src/app.js --target=node8",
+    "start": "concurrently npm:start:*",
+    "build": "parcel build src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.11.0",
+    "concurrently": "^5.1.0",
+    "graphql": "^14.6.0",
+    "mongoose": "^5.9.4"
+  }
+}
